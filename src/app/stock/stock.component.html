@@ -1,0 +1,13 @@
+<div>
+  股票信息
+</div>
+
+<ul>
+  <!-- 用subscribe方法 -->
+  <!-- <li *ngFor="let stock of stocks"> -->
+    
+  <!-- 用HTML中的pipe方法 -->
+  <li *ngFor="let stock of stocks | async">
+  {{stock.name}}
+  </li>
+</ul>
